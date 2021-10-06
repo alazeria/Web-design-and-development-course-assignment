@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动-其他方法</title>
+    <style type="text/css">
+        .dad {
+            /* 给这个元素加高度，清除浮动，但是不够灵活
+            height: 200px; */
+            overflow: hidden;
+            /* 超出的部分被隐藏 */
+            /* position: relative; */
+            background-color: red;
+        }
+
+        .son1,
+        .son2,
+        .son3 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son1 {
+            top: 200px;
+            background-color: blue;
+        }
+
+        .son2 {
+            background-color: gray;
+        }
+
+        .son3 {
+            /* position: absolute; */
+            top: 120px;
+            right: 50px;
+            height: 250px;
+            background-color: green;
+        }
+
+        .uncle {
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .clearfix:after,
+        .clearfix:before {
+            content: " ";
+            display: table;
+        }
+
+        .clearfix:after {
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .clearfix:after,
+        .clearfix:before {
+            content: " ";
+            display: table;
+        }
+
+        .clearfix:after {
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dad clearfix">
+        <div class="son1">son1</div>
+        <div class="son2">son2</div>
+        <div class="son3">son3</div>
+    </div>
+    <div class="uncle">uncle</div>
+</body>
+
+</html>

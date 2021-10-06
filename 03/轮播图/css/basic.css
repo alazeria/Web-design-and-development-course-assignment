@@ -1,0 +1,105 @@
+/*
+ * @Author: alazeria 
+ * @Date: 2021-09-15 11:57:15 
+ * @Last Modified by: alazeria
+ * @Last Modified time: 2021-09-15 12:02:50
+ */
+
+body, div, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    /* 消除图片下方3px空白 */
+    vertical-align: middle;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+.box {
+    position: relative;
+    width: 580px;
+    height: 280px;
+    background-color: pink;
+    margin: 0 auto;
+}
+
+.imgs {
+    /* 超出的部分隐藏 */
+    overflow: hidden;
+}
+
+.imgs ul {
+    width: 9999px;
+    height: 280px;
+    /*  清除li的浮动带来的干扰 */
+}
+
+.imgs ul li {
+    float: left;
+    animation: text 30s infinite linear;
+}
+
+@keyframes text {
+    /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
+    0%, 10% {
+        margin-left: 0px;
+    }
+    20%, 30% {
+        margin-left: -1200px;
+    }
+    40%, 50% {
+        margin-left: -2400px;
+    }
+    60%, 70% {
+        margin-left: -3600px;
+    }
+    80%, 90% {
+        margin-left: -4800px;
+    }
+}
+
+.btns a {
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+}
+
+.btns a.rightbtn {
+    right: 0;
+}
+
+.circles {
+    width: 170px;
+    height: 20px;
+    background-color: pink;
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    bottom: 10px;
+}
+
+.circles ol {
+    margin-right: -10px;
+}
+
+.circles ol li {
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+}

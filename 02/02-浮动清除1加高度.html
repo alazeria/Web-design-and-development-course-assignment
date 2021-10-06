@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动1</title>
+    <style type="text/css">
+        .dad {
+            /* 给这个元素加高度，清除浮动，但是不够灵活 */
+            height: 200px;
+            background-color: red;
+        }
+
+        .son1,
+        .son2,
+        .son3 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .son1 {
+            background-color: blue;
+        }
+
+        .son2 {
+            background-color: gray;
+        }
+
+        .son3 {
+            height: 250px;
+            background-color: green;
+        }
+
+        .uncle {
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dad">
+        <div class="son1">son1</div>
+        <div class="son2">son2</div>
+        <div class="son3">son3</div>
+    </div>
+    <div class="uncle">uncle</div>
+</body>
+
+</html>

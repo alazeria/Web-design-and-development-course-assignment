@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        body,div,p{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+
+
+            width: 300px;
+            height: 300px;
+            padding:50px;
+            background-color: pink;
+        }
+        .box2 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            background-color: green;
+        }
+        /* p垂直居中 */
+        p {
+            position: absolute;
+            top:50%;
+            margin-top: -50px;
+            left:0;
+            width: 50px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- →  box1相对定位 -->
+<div class="box1">
+ <!--  box2没有定位-->
+    <div class="box2">
+      <!-- 绝对定位，将以box1为参考，因为box2没有定位，box1就是最近的父辈元素 -->
+      <!-- p垂直居中在box2中 -->
+        <p>p</p>
+</div>
+ </div>
+</body>
+</html>

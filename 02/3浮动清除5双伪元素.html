@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        .dad {
+            background-color: pink;
+            margin-bottom: 10px;
+            position: relative;
+
+        }
+        .son1,.son2,.son3 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .son2 {
+            height: 250px;
+            background-color: green;
+        }
+        .son3 {
+            position: absolute;
+            top:120px;
+            right:50px;
+            height:200px;
+            background-color: blue;
+        }
+        .uncle {
+            height: 100px;
+            background-color: #ccc;
+        }
+        /* .clear1按tab，做一些修改，属于大招 */
+        .clearfix:before, .clearfix:after { content: ""; display: table; }
+        .clearfix:after { clear: both; }
+        /* IE 6/7 */
+        .clearfix { zoom: 1; }
+    </style>
+</head>
+<body>
+<div class="dad clearfix">
+    <div class="son1">son1</div>
+    <div class="son2">son2</div>
+    <div class="son3">son3</div>
+</div>
+<div class="uncle">
+    uncle
+</div>
+</body>
+</html>

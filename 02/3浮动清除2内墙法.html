@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        .dad {
+            background-color: pink;
+            margin-bottom: 10px;
+        }
+        .son1,.son2,.son3 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .son2 {
+            background-color: green;
+        }
+        .son3 {
+            height:250px;
+            background-color: blue;
+        }
+        .uncle {
+            height: 100px;
+            background-color: #ccc;
+        }
+        /* 不太容易理解，如果页面浮动较多，就要增加很多布局，多个空的DIV，不爽 */
+        .cl {
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+<div class="dad">
+    <div class="son1">son1</div>
+    <div class="son2">son2</div>
+    <div class="son3">son3</div>
+    <div class="cl"></div>
+</div>
+<div class="uncle">
+    uncle
+</div>
+</body>
+</html>

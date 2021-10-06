@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        .dad {
+            background-color: pink;
+            margin-bottom: 10px;
+            /*overflow:hidden;清除浮动 缺点：对于有定位的不够友好，超出的部分被隐藏*/
+            overflow:hidden;
+            position: relative;
+
+        }
+        .son1,.son2,.son3 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .son2 {
+            background-color: green;
+        }
+        .son3 {
+            position: absolute;
+            top:120px;
+            right:50px;
+            height:200px;
+            background-color: blue;
+        }
+        .uncle {
+            height: 100px;
+            background-color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+<div class="dad">
+    <div class="son1">son1</div>
+    <div class="son2">son2</div>
+    <div class="son3">son3</div>
+</div>
+<div class="uncle">
+    uncle
+</div>
+</body>
+</html>
