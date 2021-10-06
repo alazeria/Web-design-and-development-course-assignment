@@ -1,0 +1,79 @@
+/*第2单元 项目2-1  电子杂志页面 */
+
+/* @font-face {
+    font-family: myFont;
+    src: ur1( '0202/fonts/书法.ttf ');
+}
+
+div {
+    font-family: myFont;
+    font-size: 40px;
+}
+
+p {
+    width: 800px;
+    background-coLor: pink;
+    margin: 0 auto;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 50px;
+    -webkit-column-rule: 5px solid #ccc;
+    column-count: 3;
+    column-gap: 50px;
+    column-rule: 5px solid #ccc;
+} */
+
+/*第2单元项目2-1电子杂志页面*/
+
+body, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff url(../images/bg.jpg)center center repeat;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('../fonts/jfdt.TTF');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    width: 1024px;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: myFont;
+    coLor: #333;
+    box-sizing: border-box;
+    text-indent: 2em;
+    -webkit-column-count: 2;
+    -webkit-column-width: 400px;
+    -webkit-column-rule: 5px solid #ccc;
+    -webkit-column-gap: 100px;
+    column-count: 2;
+    column-width: 400px;
+    column-rule: 5px solid #ccc;
+    column-gap: 100px;
+}
+
+/* h1 {
+    padding: 0%;
+    margin: 0%;
+} */
+
+h4 {
+    font-size: 40px;
+    -webkit-column-span: all;
+    column-span: all;
+    text-aLign: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0%;
+    margin: 0%;
+}
