@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 立方体</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            perspective: 1000px;
+            /* 定义子元素保留3D位置 */
+            transform-style: preserve-3d;
+            transform: translate(150px, 100px) rotateX(-30deg) rotateY(30deg);
+        }
+
+        .front,
+        .back,
+        .left,
+        .right,
+        .top,
+        .bottom {
+            background-color: #ccc;
+            font-size: 30px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            border: 1px solid #fff;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+        }
+
+        .front {
+            transform: translateZ(100px);
+        }
+
+        .back {
+            transform: translateZ(-100px);
+        }
+
+        .left {
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+
+        .right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .bottom {
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="box">
+        <div class="front">1</div>
+        <div class="back">2</div>
+        <div class="left">3</div>
+        <div class="right">4</div>
+        <div class="top">5</div>
+        <div class="bottom">6</div>
+    </div>
+</body>
+
+</html>
