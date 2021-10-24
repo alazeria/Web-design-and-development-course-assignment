@@ -1,0 +1,129 @@
+﻿/*第3单元  项目3-2 多肉书城*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+header {
+    width: 1180px;
+    margin: 20px auto;
+}
+
+.yj {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    background-color: #AAE6DA;
+    transition: all 0.5s;
+    font: 26px/50px "微软雅黑";
+    color: #fff;
+}
+
+.yj:hover {
+    box-shadow: 0 0 20px #ccc;
+}
+
+.main {
+    width: 880px;
+    height: 440px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.view {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: pink;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.view:before {
+    content: "";
+    position: absolute;
+    top: -360px;
+    right: 0;
+    width: 360px;
+    height: 360px;
+    background: rgba(133, 203, 190, 0.5);
+    transform: rotate(55deg) translateX(60px);
+    transform-origin: 100% 0%;
+    transition: all 0.5s ease 0.1s;
+}
+
+.view:after {
+    content: "";
+    position: absolute;
+    bottom: -360px;
+    left: 0;
+    width: 360px;
+    height: 360px;
+    background: rgba(133, 203, 190, 0.5);
+    transform: rotate(55deg) translateX(-60px);
+    transform-origin: 0% 100%;
+    transition: all 0.5s ease 0.1s;
+}
+
+.view:hover:before {
+    top: 0;
+}
+
+.view:hover:after {
+    bottom: 0px;
+}
+
+.hover {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    height: 0;
+    overflow: hidden;
+    transform: rotate(55deg);
+    transition: all 0.5s;
+}
+
+.view:hover .hover {
+    height: 120px;
+    transform: rotate(0deg);
+}
+
+.hover h3 {
+    border-bottom: 2px solid #AAE6DA;
+}
+
+section {
+    width: 880px;
+    height: 140px;
+    padding: 25px 20px 10px;
+    background-color: #AAE6DA;
+    color: #fff;
+    font: 20px/32px "华文行楷";
+    text-indent: 2em;
+    margin: 0 auto;
+}
+
+footer {
+    /* width: 880px;
+    margin: 0 auto; */
+    text-align: center;
+}
+
+.txt {
+    font: 30px/80px "华文行楷";
+    color: #AAE6DA;
+}
